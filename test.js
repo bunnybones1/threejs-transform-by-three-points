@@ -40,12 +40,12 @@ var onReady = function() {
 	view.renderManager.onEnterFrame.add(function() {
 		var time = (new Date()).getTime() * .001;
 		spin.rotation.y += .01;
-		points[2].set(
+		points[1].set(
 			Math.sin(time) - .5 - 1,
 			Math.cos(time) - .5	,
 			Math.sin(time*1.2) - .5
 		)
-		transformByThreePoints(testObjects[0], points[0], points[1], points[2]);
+		transformByThreePoints(testObjects[0], points[0], points[1], points[2], false, 1);
 		transformByThreePoints(testObjects[1], points[1], points[0], points[2], true);
 	})
 	var planeMesh = new THREE.Mesh(
