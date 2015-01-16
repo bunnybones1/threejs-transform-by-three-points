@@ -1,6 +1,6 @@
 {
   "name": "threejs-transform-by-three-points",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A method to transform an object by 3 positions.",
   "main": "index.js",
   "license": "MIT",
